@@ -2,10 +2,7 @@ import {AiFillClockCircle} from 'react-icons/ai'
 
 const CourseTimeLineCard = props => {
   const {timelineItemsList} = props
-  const courseSideList = timelineItemsList.filter(
-    each => each.categoryId === 'COURSE',
-  )
-  const {courseTitle, description, duration, tagsList} = courseSideList
+  const {courseTitle, description, duration, tagsList} = timelineItemsList
 
   return (
     <div>
